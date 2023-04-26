@@ -19,5 +19,11 @@ namespace FillSphere
             Radius = radius;
             ThrowCount = 0;
         }
+
+        // Pop() method that puts radius at 0
+        public void Pop()
+        {
+            Radius = 0;
+        }
     }
 }
