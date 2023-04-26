@@ -25,5 +25,14 @@ namespace FillSphere
         {
             Radius = 0;
         }
+
+        // Method Throw() that increments throw count only if radius is greater than 0
+        public void Throw()
+        {
+            if (Radius > 0)
+            {
+                ThrowCount++;
+            }
+        }
     }
 }
