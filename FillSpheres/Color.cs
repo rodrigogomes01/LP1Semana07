@@ -70,5 +70,11 @@ namespace FillSpheres
         {
             Alpha = alpha;
         }
+
+        // Method GetGrey that returns the average of the RGB values
+        public byte GetGrey()
+        {
+            return (byte)((Red + Green + Blue) / 3);
+        }
     }
 }
