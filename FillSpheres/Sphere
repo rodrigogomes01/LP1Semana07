@@ -33,6 +33,12 @@ namespace FillSphere
             {
                 ThrowCount++;
             }
+
+            // Method GetTimesThrown() that returns throw count
+            public int GetTimesThrown()
+            {
+                return ThrowCount;
+            }
         }
     }
 }
