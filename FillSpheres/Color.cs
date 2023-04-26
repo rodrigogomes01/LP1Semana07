@@ -12,6 +12,15 @@ namespace FillSpheres
         public byte Blue;
         public byte Alpha;
 
+        // Constructor for each color
+        public Color(byte red, byte green, byte blue, byte alpha)
+        {
+            Red = red;
+            Green = green;
+            Blue = blue;
+            Alpha = alpha;
+        }
+
     }
 
 }
