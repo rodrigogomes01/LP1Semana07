@@ -11,5 +11,13 @@ namespace FillSphere
         public Color Color;
         public int Radius;
         public int ThrowCount;
+
+        // Constructor for each sphere
+        public Sphere(Color color, int radius)
+        {
+            Color = color;
+            Radius = radius;
+            ThrowCount = 0;
+        }
     }
 }
