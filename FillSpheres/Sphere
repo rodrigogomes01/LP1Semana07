@@ -1,0 +1,15 @@
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FillSphere
+{
+    public class Sphere
+    {
+        // Color, radius and throw count
+        public Color Color;
+        public int Radius;
+        public int ThrowCount;
+    }
+}
