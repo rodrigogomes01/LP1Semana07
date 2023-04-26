@@ -21,6 +21,13 @@ namespace FillSpheres
             Alpha = alpha;
         }
 
+        // Constructor that accepts each color and puts alpha at 255
+        public Color(byte red, byte green, byte blue)
+        {
+            Red = red;
+            Green = green;
+            Blue = blue;
+            Alpha = 255;
+        }
     }
-
 }
