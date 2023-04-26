@@ -29,5 +29,46 @@ namespace FillSpheres
             Blue = blue;
             Alpha = 255;
         }
+
+        // Getters and setters for each color
+        public byte GetRed()
+        {
+            return Red;
+        }
+
+        public void SetRed(byte red)
+        {
+            Red = red;
+        }
+
+        public byte GetGreen()
+        {
+            return Green;
+        }
+
+        public void SetGreen(byte green)
+        {
+            Green = green;
+        }
+
+        public byte GetBlue()
+        {
+            return Blue;
+        }
+
+        public void SetBlue(byte blue)
+        {
+            Blue = blue;
+        }
+
+        public byte GetAlpha()
+        {
+            return Alpha;
+        }
+
+        public void SetAlpha(byte alpha)
+        {
+            Alpha = alpha;
+        }
     }
 }
