@@ -29,7 +29,7 @@ namespace BetterFillSpheres
         public byte Red { get; set; }
         public byte Green { get; set; }
         public byte Blue { get; set; }
-        public byte Alpha { get; set; }
+        public byte Alpha { get; set; } = 255;
 
         // Method GetGrey that returns the average of the RGB values
         public byte GetGrey { get => (byte)((Red + Green + Blue) / 3); }
