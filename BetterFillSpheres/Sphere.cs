@@ -1,0 +1,42 @@
+using System;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace BetterFillSpheres
+{
+    public class Sphere
+    {
+        // Color, radius and throw count
+        public Color Color;
+        public int Radius;
+        public int ThrowCount;
+
+        // Constructor for each sphere
+        public Sphere(Color color, int radius)
+        {
+            Color = color;
+            Radius = radius;
+            ThrowCount = 0;
+        }
+
+        // Pop() method that puts radius at 0
+        public void Pop()
+        {
+            Radius = 0;
+        }
+
+        // Method Throw() that increments throw count only if radius is greater than 0
+        public void Throw()
+        {
+            if (Radius > 0)
+            {
+                ThrowCount++;
+            }
+        }
+        private int GetTimesThrown()
+        {
+            return ThrowCount;
+        }
+    }
+}
