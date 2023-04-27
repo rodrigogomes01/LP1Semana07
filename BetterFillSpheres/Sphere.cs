@@ -8,17 +8,12 @@ namespace BetterFillSpheres
     public class Sphere
     {
         // Color, radius and throw count
-        public Color Color;
-        public int Radius;
         public int ThrowCount;
 
-        // Constructor for each sphere
-        public Sphere(Color color, int radius)
-        {
-            Color = color;
-            Radius = radius;
-            ThrowCount = 0;
-        }
+        // Getters and setters
+        public Color Color { get ; set ;}
+        public float Radius { get ; set ;}
+
 
         // Pop() method that puts radius at 0
         public void Pop()
@@ -34,9 +29,6 @@ namespace BetterFillSpheres
                 ThrowCount++;
             }
         }
-        private int GetTimesThrown()
-        {
-            return ThrowCount;
-        }
+        public int GetTimesThrown { get => throwCount; }
     }
 }
