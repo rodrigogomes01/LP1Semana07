@@ -66,6 +66,11 @@ namespace BetterFillSpheres
                                 ", " + sphere3.Color.Alpha + " | Sphere 3 radius: " +
                                 sphere3.Radius + " | Sphere 3 times thrown: " +
                                 sphere3.GetTimesThrown);
+
+                                // Print the name of the color of each sphere
+            Console.WriteLine("Sphere 1 color name: " + sphere1.Color.GetName);
+            Console.WriteLine("Sphere 2 color name: " + sphere2.Color.GetName);
+            Console.WriteLine("Sphere 3 color name: " + sphere3.Color.GetName);
         }
     }
 } 
