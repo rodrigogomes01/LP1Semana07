@@ -11,13 +11,21 @@ namespace JustScored
         private int gamesPlayed;
         private int gamesWon;
 
+        // Constructor
+        public PlayerInfo(string name)
+        {
+            Name = name;
+            maxScore = 0;
+            gamesPlayed = 0;
+            gamesWon = 0;
+        }
+
         public float MaxScore
         {
             get { return maxScore; }
 
             set
             {
-                maxScore = value;
                 // Set max score if it is higher than the current max score
                 if (value > maxScore)
                 {
@@ -44,6 +52,7 @@ namespace JustScored
 
             if (win)
                 gamesWon++;
+                
         }
     }
 }
