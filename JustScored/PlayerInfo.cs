@@ -15,14 +15,26 @@ namespace JustScored
         {
             get { return maxScore; }
 
-            set 
-            { 
+            set
+            {
                 maxScore = value;
                 // Set max score if it is higher than the current max score
                 if (value > maxScore)
                 {
                     maxScore = value;
                 }
+            }
+        }
+        public string Name { get; }
+
+        public float RateOfSuccess
+        {
+            get
+            {
+                if (gamesPlayed == 0)
+                    return 0;
+                else
+                    return (float)gamesWon / gamesPlayed;
             }
         }
     }
